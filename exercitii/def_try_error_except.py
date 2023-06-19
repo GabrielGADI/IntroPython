@@ -21,6 +21,7 @@ print(foo(10))
 
 print(20 * " - ", "Exercitiul 2", 20 * " - ")
 
+
 # 0,1
 def foo(x):
     x += 1
@@ -87,6 +88,7 @@ print(list(gen))  # urmatoarele cifre fara ultima in lista
 
 print(20 * " - ", "Exercitiul 7", 20 * " - ")
 
+
 # afiseaza suma
 def func(x, y, z):
     return x + y + z
@@ -133,3 +135,25 @@ print(20 * " - ", "Exercitiul 11 TypeError", 20 * " - ")
 
 
 print(20 * " - ", "Exercitiul 12 IndexError", 20 * " - ")
+
+# Oops! invalid literal for int() with base 10: 'a'
+try:
+    x = int('a')
+except ValueError as e:
+    print("Oops!", e)
+
+print(20 * " - ", "Exercitiul 13", 20 * " - ")
+
+
+# None
+def divide(x, y):
+    try:
+        result = x / y
+    except:
+        result = None
+    return result
+
+
+print(divide(10, 0))
+
+print(20 * " - ", "Exercitiul 14", 20 * " - ")
